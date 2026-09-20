@@ -1,3 +1,6 @@
+# Demo video
+https://www.youtube.com/watch?v=ZuGce84Q5Vo
+
 # Lumora Support Assistant
 
 A Generative AI multi-agent system that lets a customer support executive ask questions in plain English about
@@ -163,7 +166,7 @@ cd <project-folder>
 python -m venv .venv
 .venv\Scripts\activate            # macOS/Linux: source .venv/bin/activate
 
-# 3. install dependencies (large download: it includes PyTorch for the local embedding model)
+# 3. install dependencies (large download: it includes PyTorch for the local embedding model. Please wait until all downloads have finished before continuing to next step 5)
 pip install -r requirements.txt
 
 # 4. add your API key
