@@ -1,0 +1,12 @@
+[server]
+# Serve only on this machine: the app shows customer data.
+address = "localhost"
+# Policy PDFs larger than this are rejected (the tools server enforces the same limit).
+maxUploadSize = 10
+
+[client]
+# Hide Streamlit's developer menu ("Deploy" etc.) for a cleaner page.
+toolbarMode = "minimal"
+
+[browser]
+gatherUsageStats = false

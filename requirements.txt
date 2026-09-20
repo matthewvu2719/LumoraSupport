@@ -7,3 +7,11 @@ langchain-huggingface
 sentence-transformers
 chromadb
 reportlab
+mcp>=1.24,<2
+langchain-mcp-adapters
+langchain-openai
+langgraph
+python-dotenv
+streamlit
+langchain
+pytest
