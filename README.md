@@ -144,10 +144,8 @@ them, citing document and page.
 |   |- customers.db         seeded SQL database (committed)
 |   |- policies/            source policy PDFs
 |   '- chroma/              vector database (generated, git-ignored)
-|- tests/                   pytest tests (no API key or LLM needed)
 |- .streamlit/config.toml   Streamlit settings (localhost only, upload limit)
 |- .env.example             copy to .env and add your key
-|- pytest.ini
 '- requirements.txt
 ```
 
@@ -244,17 +242,6 @@ python -m ingestion.check_retrieval "your question about the uploaded policy"
 
 Each result shows a similarity score and its citation. Relevant matches usually score 0.5 to 0.8; results below
 0.30 are treated as "not found".
-
-### Tests
-
-```bash
-pytest
-```
-
-The tests cover PDF extraction and cleaning, chunking, the SQL tools and the SELECT-only guard, ingestion
-(add, skip, replace, delete), search, and upload validation. They need no API key. They use a temporary database
-and vector store, and the first run downloads the embedding model. The agents' answers vary between runs, so they
-are checked with a list of evaluation questions instead of automated tests.
 
 ---
 
